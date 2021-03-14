@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CalculadoraGasolina:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CalculadoraGasolina</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CalculadoraGasolina-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CalculadoraGasolina:war exploded" />
+    </root>
+  </artifact>
+</component>
