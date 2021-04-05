@@ -1,4 +1,4 @@
-package br.edu.utfpr.CalculadoraGasolina;
+package br.edu.utfpr.CalculadoraGasolina.controller;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -6,7 +6,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "GasCalculatorServlet", value = "/calcula-gasolina")
-public class GasCalculatorServlet extends HttpServlet {
+public class GasCalculatorController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -40,8 +40,11 @@ public class GasCalculatorServlet extends HttpServlet {
         Integer gasvalueInt = Integer.parseInt(gasvalue);
 
         int total = calculateCost(kmlInt, distanceInt, gasvalueInt);
-        request.setAttribute("total", total);
-        request.getRequestDispatcher("/WEB-INF/view/gas-result.jsp").forward(request, response);
+       /* request.setAttribute("total", total);
+        request.getRequestDispatcher("/WEB-INF/view/gas-result.jsp").forward(request, response);*/
+
+        request.setAttribute("flash.total", total);
+        response.sendRedirect("gas-result");
 
     }
     private int calculateCost(int kml, int distance, int gasvalue){
