@@ -12,5 +12,8 @@
 </head>
 <body>
     O preço a se gastar com combustível para a viagem será de aproximadamente R$ ${total}
+<br>
+    Contador Global: ${counterApplication} <br>
+    Contador Sessão: ${counterSession}
 </body>
 </html>

@@ -44,8 +44,9 @@ public class GasCalculatorController extends HttpServlet {
         request.getRequestDispatcher("/WEB-INF/view/gas-result.jsp").forward(request, response);*/
 
         request.setAttribute("flash.total", total);
-        response.sendRedirect("gas-result");
+        request.setAttribute("gas-result", gasvalueInt);
 
+        request.getRequestDispatcher("/session-data").forward(request, response);
     }
     private int calculateCost(int kml, int distance, int gasvalue){
 
