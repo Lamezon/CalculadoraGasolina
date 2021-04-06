@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Gasolina</title>
 </head>
-<body>
-<h1>Bem Vindo
-</h1>
+<body style="background-color: black; color: white; text-align: center">
+<h1>Bem Vindo</h1>
 <br/>
-<a  href="calcula-gasolina">Calculadora de Gasolina!</a>
+<h2>Calculando o preço para viajar!</h2>
+<a style="color: green" href="calcula-gasolina">Simular</a>
 </body>
 </html>
