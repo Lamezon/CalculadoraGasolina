@@ -11,6 +11,6 @@
     <title>Erro 500</title>
 </head>
 <body>
-<img src="assets/images/500.png" width="600px">
+<img src="assets/images/500.png" width="100%">
 </body>
 </html>

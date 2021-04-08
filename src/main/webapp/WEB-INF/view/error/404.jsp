@@ -11,6 +11,6 @@
     <title>Erro 404</title>
 </head>
 <body>
-<img src="assets/images/404.png" width="600px">
+<img src="assets/images/404.png" width="100%">
 </body>
 </html>

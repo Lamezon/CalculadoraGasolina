@@ -11,6 +11,6 @@
     <title>Erro 400</title>
 </head>
 <body>
-    <img src="assets/images/400.png" width="600px">
+    <img src="assets/images/400.png" width="100%">
 </body>
 </html>
